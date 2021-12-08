@@ -76,17 +76,17 @@ section::after {
 }
 
 #menu {
-  visibility:hidden;
+  display:none;
 }
 
 input {
   display: none;
+  appearance: none;
 }
 
 label {
-  visibility: hidden;
+  display:none;
   box-sizing: border-box;
-  display: inline-block;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
   width: 30px;
@@ -96,6 +96,7 @@ label {
   text-align: center;
   user-select: none;
   color: white;
+  margin: 10px;
 }
 
 li {
@@ -198,15 +199,15 @@ li {
 
 @media only screen and (max-width: 810px) {
   #menu {
-    visibility: visible;
+    display: block;
   }
 
   label {
-    visibility: visible;
+    display: block;
   }
 
   nav ul {
-    visibility: hidden;
+    display: none;
   }
 
   .img-around-text{
@@ -230,10 +231,8 @@ li {
     height: auto;
   }
 
-
 }
 
 input:checked  ~ ul{
   display:block;
-  visibility: visible;
 }
