@@ -1,0 +1,33 @@
+/* centrar un bloque con 
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+*/
+
+/*
+Position: fixed;
+top: 0;
+bottom:0;
+Para fijar elementos a unas coordenadas
+*/
+
+/*
+position: sticky;
+para que se quede "pegado a unas coordenadas al hacer scroll, cuado alcanza un tope
+*/
+
+/*
+Estilo primera letra de un parrafo
+#introduction p::first-letter {
+  font-size: 1.5em;
+  color: brown;
+}
+*/
+
+/*
+Arreglar descuadre
+.resetear {
+  clear: both;
+}
+*/

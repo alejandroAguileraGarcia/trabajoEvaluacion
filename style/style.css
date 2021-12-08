@@ -1,0 +1,239 @@
+/*Estilo de la página*/
+
+*{
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: rotulos;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+nav {
+  background-color: black;
+  font-size: 1.1em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+h2 {
+  font-family: rotulos;
+  font-size: 3em;
+  text-align: center;
+}
+
+section {
+  width: 100%;
+  margin: auto;
+  padding: 10px 7%;
+}
+
+section::after {
+  clear: both;
+  display: block;
+  content: " ";
+}
+
+.paragraph {
+  padding-bottom: 1%;
+  font-size: 1.5em;
+}
+
+.img-around-text {
+  width: 50%; /*Para que ocupe menos espacio*/
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.slider {
+  overflow-x: scroll;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 300px;
+}
+
+#menu {
+  visibility:hidden;
+}
+
+input {
+  display: none;
+}
+
+label {
+  visibility: hidden;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+  color: white;
+}
+
+li {
+  margin: 0;
+  padding: 10px;
+}
+
+#container {
+  background-color: white;
+  margin: auto;
+  width: 100%;
+}
+
+/*Estilo hero section*/
+
+#hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Hero.jpg);
+  background-size: cover; /*Estira o encoge la imagen para que ocupe el bloque entero*/
+  background-position: 51% 73%; /*Primer porciento posicion lados y segundo altura*/
+  height: 95vh; /*100 vh es el alto del dispositivo*/
+  display: flex; /*PARA CENTRAR*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#hero h1 {
+  font-family: rotulos; /*Fuente*/
+  font-size: 3em;
+  margin: 5px;
+}
+
+#hero span {
+  font-family: rotulos; /*Fuente*/
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+#calltoaction {
+  font-family: rotulos; /*Fuente*/
+  padding: 10px 30px; /*Para que parezca un boton*/
+  border-width: 3px;
+  border-color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+#calltoaction:hover {
+  color: rgb(7, 7, 7);
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+/*Estilo introduction*/
+
+#camion {
+  float: left; /*Para rodear la imagen de texto*/
+  margin-left: 0;
+}
+
+/*Estilo how to get started?*/
+
+#how-to-start {
+  background-color: black;
+  color: white;
+}
+
+#pickup {
+  float: right; /*Para rodear la imagen de texto*/
+  margin-right: 0;
+}
+
+/*Estilo gallery*/
+.slider img {
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(95%); /*Imagen en blanco y negro*/
+}
+
+.slider img:hover {
+  filter: grayscale(0%);
+}
+
+/*Estilo footer*/
+
+#footer {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  
+  height: 15vh;
+  
+}
+
+/*Media query*/
+
+@media only screen and (max-width: 810px) {
+  #menu {
+    visibility: visible;
+  }
+
+  label {
+    visibility: visible;
+  }
+
+  nav ul {
+    visibility: hidden;
+  }
+
+  .img-around-text{
+    width: 100%;
+  }
+
+  #gallery{
+    padding: 0;
+  }
+
+  .slider {
+    width: 87%;
+    margin: auto;
+    height: fit-content;
+    gap: 0px;
+  }
+  
+  .slider img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: auto;
+  }
+
+
+}
+
+input:checked  ~ ul{
+  display:block;
+  visibility: visible;
+}
