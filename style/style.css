@@ -21,12 +21,26 @@ nav {
   font-size: 1.1em;
 }
 
+nav li:hover {
+  background-color: white;
+}
+
+nav li:hover > a {
+  color: black;
+}
+
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 nav a {
@@ -151,7 +165,7 @@ li {
 }
 
 #calltoaction:hover {
-  color: rgb(7, 7, 7);
+  color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255, 0.4);
 }
 
