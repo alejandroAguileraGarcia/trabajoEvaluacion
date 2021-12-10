@@ -209,6 +209,36 @@ li {
   
 }
 
+#footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  margin: 7px 0;
+}
+
+#columnas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+.columna {
+  padding: 2%;
+}
+
+.columna h3 {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.columna p {
+  margin: 5px;
+}
+
 /*Media query*/
 
 @media only screen and (max-width: 810px) {
@@ -237,12 +267,17 @@ li {
     margin: auto;
     height: fit-content;
     gap: 0px;
+    margin-bottom: 30px;
   }
   
   .slider img {
     flex: 0 0 100%;
     width: 100%;
     height: auto;
+  }
+
+  #columnas {
+    display: block;
   }
 
 }
