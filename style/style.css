@@ -77,9 +77,9 @@ section::after {
 
 .img-around-text {
   width: 50%; /*Para que ocupe menos espacio*/
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  margin-left: 50px;
 }
 
 .slider {
@@ -193,11 +193,10 @@ li {
 .slider img {
   height: 100%;
   object-fit: cover;
-  filter: grayscale(95%); /*Imagen en blanco y negro*/
 }
 
-.slider img:hover {
-  filter: grayscale(0%);
+#gallery {
+  padding-bottom: 9vh;
 }
 
 /*Estilo footer*/
@@ -206,7 +205,7 @@ li {
   background-color: rgb(35, 35, 35);
   color: rgb(255, 255, 255);
   height: 15vh;
-  padding: 2vh 7%;
+  padding: 4vh 7%;
 }
 
 #footer a {
